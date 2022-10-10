@@ -66,4 +66,9 @@ public class ListaNotasRecyclerAdapter
     public int getItemCount() {
         return lista.size();
     }
+
+    public void adiciona(Nota nota) {
+        lista.add(nota);
+        notifyDataSetChanged();
+    }
 }
